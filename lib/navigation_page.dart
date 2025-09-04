@@ -22,6 +22,10 @@ class _NavigationPageState extends State<NavigationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Navigation Page"),),
+      drawer: Drawer(
+        child: DrawerHeader(
+          child: Text("Menu")),
+      ),
       body: pages[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
