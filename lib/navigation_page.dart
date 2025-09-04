@@ -23,8 +23,12 @@ class _NavigationPageState extends State<NavigationPage> {
     return Scaffold(
       appBar: AppBar(title: Text("Navigation Page"),),
       drawer: Drawer(
-        child: DrawerHeader(
-          child: Text("Menu")),
+        child: ListView(
+          children: [
+            DrawerHeader
+            (child: Text("Menu"))
+          ],
+        ),
       ),
       body: pages[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
